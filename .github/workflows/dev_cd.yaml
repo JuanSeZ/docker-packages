@@ -34,4 +34,5 @@ jobs:
           context: .
           push: true
           tags: |
-           ghcr.io/juansez/echo:${{ steps.short-sha.outputs.sha }}
+            ghcr.io/juansez/echo:${{ steps.short-sha.outputs.sha }}
+            ghcr.io/juansez/echo:latest
