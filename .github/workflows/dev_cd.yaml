@@ -21,7 +21,7 @@ jobs:
         uses: docker/login-action@v1
         with:
           registry: ghcr.io
-          username: austral-ingsis
+          username: JuanSeZ
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push to GitHub Packages
@@ -30,4 +30,4 @@ jobs:
         with:
           push: true
           tags: |
-           ghcr.io/juansez/echo:${{ steps.short-sha.outputs.sha }}
+           ghcr.io/JuanSeZ/echo:${{ steps.short-sha.outputs.sha }}
